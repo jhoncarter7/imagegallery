@@ -1,0 +1,148 @@
+.image_gallery {
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding: 5rem 3rem 6rem 3rem;
+}
+
+.large_img {}
+
+.active_largeimg {
+    display: flex;
+    gap: 3rem;
+    font-size: small;
+
+
+
+
+}
+
+.active_largeimg img {
+    flex-basis: 65%;
+    border-radius: 30px;
+    max-width: 800px;
+    max-height: 550px;
+    min-width: 200px;
+    min-height: 200px;
+
+
+}
+
+.active_largeimg p {
+    flex-basis: 30%;
+}
+
+.inactive_largeimg {
+    display: none;
+
+}
+
+.box2 {
+
+    display: flex;
+    position: relative;
+    padding-top: 2rem;
+    gap: 4rem;
+}
+
+.slider {
+    /* height: 450px; */
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    width: 720px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin-left: 2.3rem;
+    flex-basis: 60%;
+}
+
+.activeimage img {
+
+    border: 2px solid red;
+    width: 130px;
+    height: 100px;
+    border-radius: 15px;
+
+
+}
+
+.simpleimage img {
+    width: 130px;
+    height: 100px;
+    border-radius: 15px;
+}
+.arrowLeft{
+    /* style={{position: "absolute", left: "-0.5rem", top: "3.5rem"}} */
+    position: absolute;
+    left: -0.5rem;
+    top: 3.5rem;
+}
+
+.arrowRight{
+    /* style={{position: "absolute", left: "62%", top: "3.5rem"}}\ */
+
+    position: absolute;
+    left: 62%;
+    top: 3.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .active_largeimg img {
+        max-height: 300px;
+    }
+
+    .active_largeimg p {
+        font-size: x-small;
+    }
+
+    .activeimage img {
+        width: 100px;
+    }
+
+    .simpleimage img {
+        width: 100px;
+
+    }
+    .slider{
+        margin-left: 0.8rem;
+    }
+    .arrowLeft{
+        left: -1.5rem;
+    }
+    .arrowRight{
+left: 58%;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+
+    .active_largeimg {
+    display: block;
+    width: 100%;
+}
+.active_largeimg img {
+    width: inherit;
+}
+
+/* .simpleimage img {
+    width: inherit;
+
+} */
+.box2 {
+    display: block;
+    width: 100%;
+}
+
+.slider {
+    width: inherit;
+    margin-left: 0.4rem;
+}
+.arrowRight{
+    left: 98%;
+        }
+        .arrowLeft{
+            left: -2.5rem;
+        }
+}
